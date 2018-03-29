@@ -12,7 +12,7 @@ function abilities(pokemon){
 function hp(pokemon){
 
 	let arr = [];
-	for(let i=0; i<pokemon.stats[i].base_stat; i++){
+	for(let i=0; i<pokemon.stats[i].length; i++){
 		arr.push(pokemon.stats[5].base_stat);
 	}
 	return arr;
@@ -21,7 +21,7 @@ function hp(pokemon){
 function attack(pokemon){
 
 	let arr = [];
-	for(let i=0; i<pokemon.stats[i].base_stat; i++){
+	for(let i=0; i<pokemon.stats[i].length; i++){
 		arr.push(pokemon.stats[4].base_stat);
 	}
 	return arr;
@@ -30,7 +30,7 @@ function attack(pokemon){
 function defense(pokemon){
 
 	let arr = [];
-	for(let i=0; i<pokemon.stats[i].base_stat; i++){
+	for(let i=0; i<pokemon.stats[i].length; i++){
 		arr.push(pokemon.stats[3].base_stat);
 	}
 	return arr;
