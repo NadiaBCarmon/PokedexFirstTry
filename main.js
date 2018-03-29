@@ -1,11 +1,49 @@
 //Class called Pokemon that generates Pokemon objects.
+
+function abilities(pokemon){
+
+	let arr = [];
+	for(let i=0; i<pokemon.abilities.length; i++){
+		arr.push(pokemon.abilities[i].ability.name);
+	}
+	return arr;
+}
+
+// function hp(pokemon){
+
+// 	let arr = [];
+// 	for(let i=0; i<pokemon.stats[i].base_stat; i++){
+// 		arr.push(pokemon.stats[5].base_stat);
+// 	}
+// 	return arr;
+// }
+
+// function attack(pokemon){
+
+// 	let arr = [];
+// 	for(let i=0; i<pokemon.stats[i].base_stat; i++){
+// 		arr.push(pokemon.stats[4].base_stat);
+// 	}
+// 	return arr;
+// }
+
+// function defense(pokemon){
+
+// 	let arr = [];
+// 	for(let i=0; i<pokemon.stats[i].base_stat; i++){
+// 		arr.push(pokemon.stats[3].base_stat);
+// 	}
+// 	return arr;
+// }
+
+
 class Pokemon {
 
 	constructor(pokemon){
-	this.hp = pokemon.stats[5].base_stat;
-	this.attack = pokemon.stats[4].base_stat;
-	this.defense = pokemon.stats[3].base_stat;
-	this.abilities = pokemon.abilities;
+	// this.hp = hp(pokemon);
+	// this.attack = attack(pokemon);
+	// this.defense = defense(pokemon);
+	this.abilities = abilities(pokemon);
 	}
 }
 
@@ -39,7 +77,7 @@ class Trainer {
 // have all css code written in sass
 // use materialize as the grid system
 
-		var pokestr = '';
+		//var pokestr = '';
 		$.ajax({
 
 			url: "https://pokeapi.co/api/v2/pokemon/kakuna",
@@ -49,11 +87,17 @@ class Trainer {
 			success: function(pokemon) {
 					
 
-					//let kakuna = new Pokemon(pokemon)
+					console.log(new Pokemon(pokemon))
 
 					$('#left-screen').click(function() { 
 					
-					$('#green-screen').html(new Pokemon(pokemon))
+					$('#abilities').text(abilities(pokemon))
+					// $('#hp').text(hp(pokemon))
+					// $('#attack').text(attack(pokemon))
+					// $('#defense').text(defense(pokemon))
+
+
+					$('#kakuna-img').append('<img src="Images/kakuna.png"></img>')
 
 				})
 
@@ -90,9 +134,9 @@ class Trainer {
 			type: "GET",
 
 			success: function(pokemon) {
-			// 	//console.log(new Pokemon(pokemon))
+			//console.log(new Pokemon(pokemon))
 
-			// 		$('#bigcircle').click(function() { 
+			// 		('#bigcircle').click(function() { 
 
 			// 		$('#green-screen').text(new Pokemon(pokemon))
 
