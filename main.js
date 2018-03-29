@@ -87,17 +87,18 @@ class Trainer {
 			success: function(pokemon) {
 					
 
-					console.log(new Pokemon(pokemon))
+					//console.log(new Pokemon(pokemon))
 
 					$('#left-screen').click(function() { 
+
+
+					$('#kakuna-img').append('<img src="Images/kakuna.png"></img>').css("text-align", "center")
 					
-					$('#abilities').text(abilities(pokemon))
-					$('#hp').text(hp(pokemon))
-					$('#attack').text(attack(pokemon))
-					$('#defense').text(defense(pokemon))
-
-
-					$('#kakuna-img').append('<img src="Images/kakuna.png"></img>')
+					$('#name').text(pokemon.name).css("text-align", "center").css("text-align", "center")
+					$('#abilities').text(abilities(pokemon)).css("text-align", "center")
+					$('#hp').text(hp(pokemon)).css("text-align", "center")
+					$('#attack').text(attack(pokemon)).css("text-align", "center")
+					$('#defense').text(defense(pokemon)).css("text-align", "center")
 
 				})
 
