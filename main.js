@@ -9,40 +9,40 @@ function abilities(pokemon){
 	return arr;
 }
 
-// function hp(pokemon){
+function hp(pokemon){
 
-// 	let arr = [];
-// 	for(let i=0; i<pokemon.stats[i].base_stat; i++){
-// 		arr.push(pokemon.stats[5].base_stat);
-// 	}
-// 	return arr;
-// }
+	let arr = [];
+	for(let i=0; i<pokemon.stats[i].base_stat; i++){
+		arr.push(pokemon.stats[5].base_stat);
+	}
+	return arr;
+}
 
-// function attack(pokemon){
+function attack(pokemon){
 
-// 	let arr = [];
-// 	for(let i=0; i<pokemon.stats[i].base_stat; i++){
-// 		arr.push(pokemon.stats[4].base_stat);
-// 	}
-// 	return arr;
-// }
+	let arr = [];
+	for(let i=0; i<pokemon.stats[i].base_stat; i++){
+		arr.push(pokemon.stats[4].base_stat);
+	}
+	return arr;
+}
 
-// function defense(pokemon){
+function defense(pokemon){
 
-// 	let arr = [];
-// 	for(let i=0; i<pokemon.stats[i].base_stat; i++){
-// 		arr.push(pokemon.stats[3].base_stat);
-// 	}
-// 	return arr;
-// }
+	let arr = [];
+	for(let i=0; i<pokemon.stats[i].base_stat; i++){
+		arr.push(pokemon.stats[3].base_stat);
+	}
+	return arr;
+}
 
 
 class Pokemon {
 
 	constructor(pokemon){
-	// this.hp = hp(pokemon);
-	// this.attack = attack(pokemon);
-	// this.defense = defense(pokemon);
+	this.hp = hp(pokemon);
+	this.attack = attack(pokemon);
+	this.defense = defense(pokemon);
 	this.abilities = abilities(pokemon);
 	}
 }
@@ -92,9 +92,9 @@ class Trainer {
 					$('#left-screen').click(function() { 
 					
 					$('#abilities').text(abilities(pokemon))
-					// $('#hp').text(hp(pokemon))
-					// $('#attack').text(attack(pokemon))
-					// $('#defense').text(defense(pokemon))
+					$('#hp').text(hp(pokemon))
+					$('#attack').text(attack(pokemon))
+					$('#defense').text(defense(pokemon))
 
 
 					$('#kakuna-img').append('<img src="Images/kakuna.png"></img>')
