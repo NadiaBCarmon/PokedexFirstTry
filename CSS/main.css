@@ -1,0 +1,140 @@
+@media (min-width: 320px) and (max-width: 768px) {  
+
+}
+
+p {
+	font-family: PokemonHollow;
+}
+
+#main-container {
+display: flex;
+}
+
+/*	html {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+}*/
+
+#left-main-div {
+	background-color: red;
+	/*display: inline-flex;*/
+	height: 810px;
+	width: 700px;
+}
+
+#top-div {
+	display: inline-flex;
+}
+
+#left-screen {
+	background-color: white;
+	border: thick solid;
+	border-color: gray;
+	border-radius: 30px;
+	height: 400px;
+	width: 650px;
+	margin-top: 70px;
+	margin-left: 21px;
+	
+}
+
+#bigcircle img {
+	display: inline-flex;
+	width: 100px;
+	height: 100px;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+.top-circles {
+	display: inline-flex;
+	margin-left: 20%;
+
+}
+
+#circle-one {
+	height: 35px;
+	width: 35px;
+	background-color: purple;
+	display: inline-flex;
+	border-radius: 75%;
+}
+
+#circle-two {
+	height: 35px;
+	width: 35px;
+	background-color: darkgreen;
+	display: inline-flex;
+	border-radius: 75%;
+}
+
+#circle-three {
+	height: 35px;
+	width: 35px;
+	background-color: navy;
+	display: inline-flex;
+	border-radius: 75%;
+}
+
+#med-rectangle {
+
+	background-color: yellow;
+	height:50px;
+	width: 50px;
+	box-shadow: 5px 2px;
+	margin-top: 10%;
+	margin-left: 15%
+}
+
+
+#right-main-div {
+	background-color: blue;
+	/*display: inline-flex;	*/
+	height: 700px;
+	width: 700px;
+	margin-top: 4%;
+}
+
+#green-screen {
+	background-color: green;
+	height: 350px;
+	width: 550px;
+	margin-top: 80px;
+	margin-left: 70px;
+	border-color: black;
+	border: thick;
+}
+
+#keys-maindiv {
+	margin-left: 15%;
+	margin-top: 5%;
+	
+}
+
+.set1-maindiv {
+	display: block;
+}
+
+#keys-set1 {
+background-color: orange;
+display: inline-flex;
+height: 50px;
+width: 50px;
+
+
+}
+
+.set2-maindiv {
+	display: block;
+}
+
+#keys-set2 {
+	background-color: orange;
+	display: inline-flex;
+	height: 50px;
+	width: 50px;
+
+}
+
